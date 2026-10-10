@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Exo", ui-sans-serif, system-ui, sans-serif;
+  --color-brand: #0aad0a;
+  --color-brand-dark: #088a08;
+  --color-ink: #21313c;
+  --color-muted: #5c6c75;
+  --color-line: #e9ecef;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: #fff;
+  overflow-x: hidden;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+.container-page {
+  width: min(1200px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
